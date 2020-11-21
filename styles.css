@@ -115,16 +115,25 @@ img{
 .footer{
     color: white;
     background-color: hsl(192, 100%, 9%);
+    padding: 4em 0em 4em 0em;
 }
 
 .footerContentContainer{
     display: flex;
     flex-direction: row;
-    padding: 70px;
+    margin: 0px 70px 70px 70px;
 }
 
-.footerLeft, .footerMiddle, .footerRight{
-    width: 33%;
+.footerLogo{
+    margin-left: 3em;
+}
+
+.footerLeft, .footerMiddle{
+    width: 35%;
+}
+
+.footerRight{
+    width: 30%;
 }
 
 .location, .phoneNumber, .email{
