@@ -22,6 +22,12 @@ a{
     color: white;
 }
 
+/* Added this because the icons would stretch due to flexbox*/
+img{
+    align-self: center;
+}
+
+
 .container{
     display: flex;
     flex-direction: column;
@@ -119,6 +125,20 @@ a{
 
 .footerLeft, .footerMiddle, .footerRight{
     width: 33%;
+}
+
+.location, .phoneNumber, .email{
+    display: flex;
+    flex-direction: row;
+}
+
+.locationIcon{
+    align-self: flex-start;
+    margin-top: 1.2em;
+}
+
+.locationIcon, .icon{
+    margin-right: 1em;
 }
 
 .list{
