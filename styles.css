@@ -114,10 +114,26 @@ a{
 .footerContentContainer{
     display: flex;
     flex-direction: row;
+    padding: 70px;
 }
 
 .footerLeft, .footerMiddle, .footerRight{
     width: 33%;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMiddle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.links{
+    margin-bottom: 20px;
 }
 
 .socialMedia{
