@@ -82,6 +82,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 12em;
 }
 
 .benefitContainer{
