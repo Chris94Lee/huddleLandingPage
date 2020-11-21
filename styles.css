@@ -22,6 +22,12 @@ a{
     color: white;
 }
 
+/* Added this because the icons would stretch due to flexbox*/
+img{
+    align-self: center;
+}
+
+
 .container{
     display: flex;
     flex-direction: column;
@@ -57,6 +63,9 @@ a{
 }
 
 .oneLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 30%;
     margin-right: 100px;
 }
@@ -69,19 +78,21 @@ a{
 }
 
 .mockups{
-    width: 400px;
+    width: 600px;
 }
 
 .sectionTwo{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 12em;
 }
 
 .benefitContainer{
     margin: 20px auto;
-    width: 60%;
-    height: 250px;
+    width: 80%;
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -93,7 +104,10 @@ a{
 
 .benefitText{
     width: 40%;
-    margin-left: 5em;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .benefitText p{
@@ -101,7 +115,7 @@ a{
 }
 
 .benefitImage{
-    width: 300px;
+    width: 400px;
     margin-right: 100px;
 }
 
@@ -109,25 +123,86 @@ a{
 .footer{
     color: white;
     background-color: hsl(192, 100%, 9%);
+    padding-top: 8em;
+    padding-bottom: 4em;
+   
 }
 
 .footerContentContainer{
     display: flex;
     flex-direction: row;
+    margin: 0px 70px 0px 70px;
 }
 
-.footerLeft, .footerMiddle, .footerRight{
-    width: 33%;
+.ctaContainer{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding: 2em;
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+    width: 50%;
+    transform: translate(0, -120%);
+    box-shadow: 0 0 3px rgb(187, 187, 187);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footerLogo{
+    margin-left: 3em;
+}
+
+.footerLeft, .footerMiddle{
+    width: 35%;
+}
+
+.footerRight{
+    width: 30%;
+}
+
+.location, .phoneNumber, .email{
+    display: flex;
+    flex-direction: row;
+}
+
+.locationIcon{
+    align-self: flex-start;
+    margin-top: 1.2em;
+}
+
+.locationIcon, .icon{
+    margin-right: 1em;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMiddle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.links{
+    margin-bottom: 20px;
 }
 
 .socialMedia{
-    filter: invert(100%);
-    width: 20px;
-    border: solid;
-    border-color: white;
-    border-radius: 100px;
+    margin-right: 1em;
 }
 
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3em;
+}
 
 
 .attribution {
@@ -138,3 +213,28 @@ a{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .oneContent{
+        flex-direction: column;
+    }
+
+    .oneLeft{
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .mockups{
+        width: 80%;
+    }
+    
+    .benefitContainer{
+        flex: auto;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+  }
