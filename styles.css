@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+    width: 100%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+}
+
+h1, h2{
+    font-family: 'Poppins', Arial;
+}
+
+button{
+    border-radius: 20px;
+    height: 30px;
+    border: none;
+}
+
+a{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.sectionOne{
+    background-image: url("images/bg-hero-desktop.svg");
+    background-color: hsl(193, 100%, 96%);
+    padding-bottom: 40px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo{
+    width: 165px;
+    height: 25px;
+}
+
+.oneContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.oneLeft{
+    width: 30%;
+    margin-right: 100px;
+}
+
+.secondCTA{
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+}
+
+.mockups{
+    width: 400px;
+}
+
+.sectionTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefitContainer{
+    margin: 20px auto;
+    width: 60%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid;
+    border-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    padding: 20px 20px 20px 40px;
+}
+
+.benefitText{
+    width: 40%;
+    margin-left: 5em;
+}
+
+.benefitText p{
+    color: rgb(123, 123, 123);
+}
+
+.benefitImage{
+    width: 300px;
+    margin-right: 100px;
+}
+
+
+.footer{
+    color: white;
+    background-color: hsl(192, 100%, 9%);
+}
+
+.footerContentContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerLeft, .footerMiddle, .footerRight{
+    width: 33%;
+}
+
+.socialMedia{
+    filter: invert(100%);
+    width: 20px;
+    border: solid;
+    border-color: white;
+    border-radius: 100px;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
