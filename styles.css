@@ -63,6 +63,9 @@ img{
 }
 
 .oneLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 30%;
     margin-right: 100px;
 }
@@ -75,7 +78,7 @@ img{
 }
 
 .mockups{
-    width: 400px;
+    width: 600px;
 }
 
 .sectionTwo{
@@ -88,8 +91,8 @@ img{
 
 .benefitContainer{
     margin: 20px auto;
-    width: 60%;
-    height: 250px;
+    width: 80%;
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -101,7 +104,10 @@ img{
 
 .benefitText{
     width: 40%;
-    margin-left: 5em;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .benefitText p{
@@ -109,7 +115,7 @@ img{
 }
 
 .benefitImage{
-    width: 300px;
+    width: 400px;
     margin-right: 100px;
 }
 
@@ -192,6 +198,11 @@ img{
     margin-right: 1em;
 }
 
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3em;
+}
 
 
 .attribution {
@@ -202,3 +213,28 @@ img{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .oneContent{
+        flex-direction: column;
+    }
+
+    .oneLeft{
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .mockups{
+        width: 80%;
+    }
+    
+    .benefitContainer{
+        flex: auto;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+  }
