@@ -254,11 +254,16 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 700px;
+        height: 550px;
+        padding: 10px;
+    }
+
+    #reverse{
+      flex-direction: column-reverse;
     }
 
     .benefitText{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -266,9 +271,15 @@ img{
         margin: 0 auto;
     }
 
+    .ctaContainer{
+      width: 85%;
+      padding: 1em;
+    }
+
     .footerContentContainer{
       flex-direction: column;
       text-align: left;
+      margin: 0px 30px 0px 30px;
     }
 
     .footerLeft, .footerMiddle, .footerRight{
@@ -278,11 +289,20 @@ img{
     .footerMiddle{
       flex-direction: column;
     }
+
+    .footerRight{
+      text-align: center;
+    }
+
+    .copyright{
+      margin: 0;
+      justify-content: center;
+    }
   }
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 500px) {
     .benefitImage{
-      width: 300px;
+      width: 100%;
     }
   
   }
