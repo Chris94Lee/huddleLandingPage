@@ -12,10 +12,12 @@ h1, h2{
     font-family: 'Poppins', Arial;
 }
 
+
+
 button{
     border-radius: 20px;
-    height: 30px;
     border: none;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 a{
@@ -48,6 +50,12 @@ img{
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.headerCTA{
+    height: 40px;
+    background-color: white;
+    width: 200px;
 }
 
 .logo{
@@ -96,9 +104,10 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid;
-    border-color: rgb(232, 232, 232);
+    border: thin;
+    border-color: rgb(244, 244, 244);
     border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding: 20px 20px 20px 40px;
 }
 
@@ -122,7 +131,7 @@ img{
 
 .footer{
     color: white;
-    background-color: hsl(192, 100%, 9%);
+    background-color: hsl(191, 100%, 15%);
     padding-top: 8em;
     padding-bottom: 4em;
    
@@ -150,6 +159,10 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.ctaContainer > h2{
+    text-align: center;
 }
 
 
@@ -216,8 +229,12 @@ img{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     
+    body{
+        text-align: center;
+    }
+
     .oneContent{
         flex-direction: column;
     }
@@ -235,6 +252,37 @@ img{
     .benefitContainer{
         flex: auto;
         flex-direction: column;
-        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
     }
+
+    .benefitText{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .benefitImage{
+        margin: 0 auto;
+    }
+
+    .footerContentContainer{
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .footerLeft, .footerMiddle, .footerRight{
+      width: 100%;
+    }
+
+    .footerMiddle{
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .benefitImage{
+      width: 300px;
+    }
+  
   }
