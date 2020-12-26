@@ -113,10 +113,9 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: thin;
-    border-color: rgb(244, 244, 244);
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 13px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
     padding: 20px 20px 20px 40px;
 }
 
@@ -277,13 +276,17 @@ img{
         margin-top: 20px;
     }
     
+    .sectionTwo{
+      margin-top: 3em;
+    }
+
     .benefitContainer{
         flex: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 550px;
-        padding: 10px;
+        height: 500px;
+        padding: 20px;
     }
 
     #reverse{
