@@ -12,12 +12,15 @@ h1, h2{
     font-family: 'Poppins', Arial;
 }
 
-
+h1{
+  font-size: 1.8em;
+}
 
 button{
     border-radius: 20px;
     border: none;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 a{
@@ -58,15 +61,18 @@ img{
     width: 200px;
 }
 
+.headerCTA:hover{
+  background-color: rgb(235, 235, 235);
+}
+
 .logo{
     width: 165px;
-    height: 25px;
 }
 
 .oneContent{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     
 }
 
@@ -75,7 +81,6 @@ img{
     flex-direction: column;
     justify-content: center;
     width: 30%;
-    margin-right: 100px;
 }
 
 .secondCTA{
@@ -83,6 +88,10 @@ img{
     height: 40px;
     color: white;
     background-color: hsl(322, 100%, 66%);
+}
+
+.secondCTA:hover{
+  background-color: hsl(322, 97%, 71%);
 }
 
 .mockups{
@@ -131,7 +140,7 @@ img{
 
 .footer{
     color: white;
-    background-color: hsl(191, 100%, 15%);
+    background-color: hsl(192, 100%, 8%);
     padding-top: 8em;
     padding-bottom: 4em;
    
@@ -205,6 +214,7 @@ img{
 
 .links{
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 .socialMedia{
@@ -221,10 +231,9 @@ img{
 .attribution {
     font-size: 11px;
     text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    background-color: hsl(192, 100%, 8%);
+    margin: 0;
+    color: white;
 }
 
 
@@ -235,8 +244,26 @@ img{
         text-align: center;
     }
 
+    .header{
+      padding: 20px;
+    }
+
+    .logo{
+      width: 130px;
+    }
+
+    .headerCTA{
+      height: 30px;
+      width: 100px;
+    }
+
     .oneContent{
         flex-direction: column;
+    }
+
+    .secondCTA{
+      margin-top: 10px;
+      margin-bottom: 30px;
     }
 
     .oneLeft{
@@ -247,6 +274,7 @@ img{
 
     .mockups{
         width: 80%;
+        margin-top: 20px;
     }
     
     .benefitContainer{
